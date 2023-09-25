@@ -1,24 +1,79 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
+// components import
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
+
+// pages import
+import Home from './pages/Home.js';
+import About from './pages/About.js';
+import BookTickets from './pages/BookTickets.js'
+import Cart from './pages/Cart.js';
+// import Cart from './pages/Cart.js';
+import ContactUs from './pages/ContactUs.js';
+import TrackTicket from './pages/TrackTicket.js';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <main>
+          <Routes>
+            <Route 
+              path="/"
+              element={
+                <>
+                <Home />
+                </>
+              }
+            />
+            <Route 
+              path="/about" 
+              element={
+                <>
+                <About />
+                </>
+              } 
+              />
+              <Route 
+              path="/booktickets" 
+              element={
+                <>
+                <BookTickets />
+                </>
+              } 
+            />
+            <Route 
+              path="/cart" 
+              element={
+                <>
+                <Cart />
+                </>
+              } 
+            />
+            <Route 
+              path="/contactus" 
+              element={
+                <>
+                <ContactUs />
+                </>
+              } 
+            />
+            <Route 
+              path="/trackticket" 
+              element={
+                <>
+                <TrackTicket />
+                </>
+              } 
+            />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
