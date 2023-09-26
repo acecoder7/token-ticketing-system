@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <h3>Token Gated Ticketing System</h3>
+      <div class="logo">Your Logo</div>
+      <h3 className='header-h3'>Token Gated Ticketing System</h3>
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
@@ -13,7 +14,7 @@ const Header = () => {
           <li><Link to="/contactus">Contact Us</Link></li>
           <li><Link to="/booktickets">Book Tickets</Link></li>
           <li><Link to="/cart">Cart</Link></li>
-          <li><Link to="/tracktickets">Track Tickets</Link></li>
+          <li><Link to="/trackticket">Track Tickets</Link></li>
         </ul>
       </nav>
     </header>
