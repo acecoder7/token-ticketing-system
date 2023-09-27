@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/token-ticketing-system/static/css/main.0a34e89e.css",
+    "main.js": "/token-ticketing-system/static/js/main.508a25bc.js",
+    "static/js/787.b4823eca.chunk.js": "/token-ticketing-system/static/js/787.b4823eca.chunk.js",
+    "index.html": "/token-ticketing-system/index.html",
+    "main.0a34e89e.css.map": "/token-ticketing-system/static/css/main.0a34e89e.css.map",
+    "main.508a25bc.js.map": "/token-ticketing-system/static/js/main.508a25bc.js.map",
+    "787.b4823eca.chunk.js.map": "/token-ticketing-system/static/js/787.b4823eca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a34e89e.css",
+    "static/js/main.508a25bc.js"
+  ]
+}
